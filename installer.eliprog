@@ -1,3 +1,11 @@
 #!/bin/python
 # installer for elijahOS
 
+import os,shutil
+
+def makeDir(name):
+  return os.mkdir(name)
+def makeFile(name, directory):
+  os.system(f'touch {directory}/{name}')
+
+makeFile("PERMISSIONS", makeDir("__eliprog_cache__"))
