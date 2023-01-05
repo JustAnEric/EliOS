@@ -4,7 +4,8 @@
 import os,shutil
 
 def makeDir(name):
-  return os.mkdir(name)
+  os.mkdir(name)
+  return name
 def makeFile(name, directory):
   os.system(f'touch {directory}/{name}')
 
